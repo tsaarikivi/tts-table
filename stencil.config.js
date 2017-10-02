@@ -1,12 +1,10 @@
 exports.config = {
-  namespace: 'myname',
+  namespace: 'ttstable',
   generateDistribution: true,
-  bundles: [
-    { components: ['my-name'] }
-  ]
+  bundles: [{ components: ['tts-table'] }]
 };
 
 exports.devServer = {
   root: 'www',
   watchGlob: '**/**'
-}
+};
