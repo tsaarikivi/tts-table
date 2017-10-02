@@ -39,7 +39,6 @@ Polyfills might also be needed for webcomponents.
 ```ts
 // Things you can set as props to the component
 @Prop() tableData: TableData;
-@Prop() rows?: number;
 
 // TableData is an array of arrays of TableItem
 interface TableData extends Array<TableColumn> {}
