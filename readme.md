@@ -4,9 +4,6 @@
 
 ## Using this component
 
-Note that some js frameworks might require additional steps to the ones below.
-Polyfills might also be needed for webcomponents.
-
 Put a script tag similar to this:
 
 ```html
@@ -32,6 +29,64 @@ and add:
 ```
 
 ...in the head of your index.html. Then you can use the element anywhere in your template, JSX, html etc.
+Note that some js frameworks might require additional steps to the ones below.
+Polyfills might also be needed for webcomponents.
+
+## Documentation
+
+### Properties
+
+```ts
+// Things you can set as props to the component
+@Prop() tableData: TableData;
+@Prop() rows?: number;
+
+// TableData is an array of arrays of TableItem
+interface TableData extends Array<TableColumn> {}
+interface TableColumn extends Array<TableItem> {}
+
+// This is the data model of one item
+interface TableItem {
+  startTime: Date | number;
+  endTime: Date | number;
+  row: number;
+  title?: string;
+  free?: boolean;
+  unavailable?: boolean;
+  selected?: boolean;
+}
+```
+
+Please note that free items are added to any position in the provided tableData. The amount depends on the highest row number in the tableData or if the rows property is set.
+
+### Events
+
+```ts
+// you should listen to tableItemSelected event if you want to change the selected item.
+@Event() tableItemSelected: EventEmitter;
+```
+
+Please note that you should handle the logic of selecting the items in the parent component. The logic is delegated because of multi / single selection possibilities. Maybe someone does not want selections at all.
+
+```ts
+// Here is an example of single seleciton
+function setSelectedItem(tableData, selectedItem) {
+  return tableData.map(
+    columnData => columnData.map(
+      tableItem => {
+        if (
+          tableItem.startTime === selectedItem.startTime &&
+          tableItem.endTime === selectedItem.endTime &&
+          tableItem.row === selectedItem.row
+        ) {
+          return Object.assign({}, tableItem, {selected: true})
+        }
+        return Object.assign({}, tableItem, {selected: false})
+      }
+    )
+  )
+}
+```
 
 ## Getting Started with hacking
 
