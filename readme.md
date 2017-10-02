@@ -57,8 +57,6 @@ interface TableItem {
 }
 ```
 
-Please note that free items are added to any position in the provided tableData. The amount depends on the highest row number in the tableData or if the rows property is set.
-
 ### Events
 
 ```ts
@@ -66,7 +64,7 @@ Please note that free items are added to any position in the provided tableData.
 @Event() tableItemSelected: EventEmitter;
 ```
 
-Please note that you should handle the logic of selecting the items in the parent component. The logic is delegated because of multi / single selection possibilities. Maybe someone does not want selections at all.
+Please note that you should handle the logic of selecting / adding free / unavailbling the items in the parent component. The logic is delegated because of multi / single selection possibilities. Maybe someone does not want selections at all.
 
 ```ts
 // Here is an example of single seleciton
