@@ -8,12 +8,13 @@ $item-bg-selected: #40c4ff;
 $item-bg-free: #ffea00;
 
 $item-height: 34px;
-$item-padding: 7px;
+$item-padding: 10px;
 $item-margin: 4px 2px;
 $item-border-radius: 2px;
 
 .table-item {
   box-sizing: border-box;
+  overflow: hidden;
   margin: var(--tts-table-item-margin, $item-margin);
   font-size: var(--tts-table-item-font-size, $item-font-size);
   padding: var(--tts-table-item-padding, $item-padding);

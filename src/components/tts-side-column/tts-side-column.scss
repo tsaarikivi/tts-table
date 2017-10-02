@@ -4,7 +4,7 @@ $item-font-size: 16px;
 $item-bg: transparent;
 
 $item-height: 34px;
-$item-padding: 6px;
+$item-padding: 9px 0;
 $item-margin: 4px 2px;
 $item-border-radius: 2px;
 
@@ -16,12 +16,13 @@ tts-side-column {
 }
 
 .side-item {
+  text-align: center;
   box-sizing: border-box;
-  margin: var(--tts-table-item-margin, $item-margin);
-  font-size: var(--tts-table-item-font-size, $item-font-size);
-  padding: var(--tts-table-item-padding, $item-padding);
-  height: var(--tts-table-item-height, $item-height);
-  border-radius: var(--tts-table-item-border-radius, $item-border-radius);
-  background-color: var(--tts-table-item-background-color, $item-bg);
-  color: var(--tts-table-item-color, $item-color);
+  margin: var(--tts-side-item-margin, $item-margin);
+  font-size: var(--tts-side-item-font-size, $item-font-size);
+  padding: var(--tts-side-item-padding, $item-padding);
+  height: var(--tts-side-item-height, $item-height);
+  border-radius: var(--tts-side-item-border-radius, $item-border-radius);
+  background-color: var(--tts-side-item-background-color, $item-bg);
+  color: var(--tts-side-item-color, $item-color);
 }
