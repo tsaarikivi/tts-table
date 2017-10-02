@@ -3,7 +3,7 @@
   "components": [
     [
       "TTS-SIDE-COLUMN",
-      "hgjq0aoi",
+      "fc1iiplb",
       {
         "$": "11usuhr0"
       },
@@ -17,17 +17,11 @@
     ],
     [
       "TTS-TABLE",
-      "hgjq0aoi",
+      "fc1iiplb",
       {
         "$": "11usuhr0"
       },
-      [
-        [
-          "rows",
-          1,
-          2
-        ]
-      ],
+      0,
       [
         [
           "itemSelected",
@@ -37,7 +31,7 @@
     ],
     [
       "TTS-TABLE-COLUMN",
-      "hgjq0aoi",
+      "fc1iiplb",
       {
         "$": "11usuhr0"
       },
@@ -51,7 +45,7 @@
     ],
     [
       "TTS-TABLE-ITEM",
-      "hgjq0aoi",
+      "fc1iiplb",
       {
         "$": "11usuhr0"
       }
