@@ -1,0 +1,27 @@
+$item-color: rgba(16, 16, 16, 0.95);
+$item-font-size: 16px;
+
+$item-bg: transparent;
+
+$item-height: 34px;
+$item-padding: 6px;
+$item-margin: 4px 2px;
+$item-border-radius: 2px;
+
+tts-side-column {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 30px;
+  font-weight: bold;
+}
+
+.side-item {
+  box-sizing: border-box;
+  margin: var(--tts-table-item-margin, $item-margin);
+  font-size: var(--tts-table-item-font-size, $item-font-size);
+  padding: var(--tts-table-item-padding, $item-padding);
+  height: var(--tts-table-item-height, $item-height);
+  border-radius: var(--tts-table-item-border-radius, $item-border-radius);
+  background-color: var(--tts-table-item-background-color, $item-bg);
+  color: var(--tts-table-item-color, $item-color);
+}

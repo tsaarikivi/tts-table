@@ -1,0 +1,19 @@
+$column-width: 240px;
+$column-title-padding: 6px;
+$column-title-font-size: 16px;
+
+tts-table-column {
+  display: inline-block;
+  vertical-align: top;
+  width: var(--tts-table-column-width, $column-width);
+  flex: 1 0 auto;
+  height: 100%;
+}
+
+.table-column-title {
+  width: 100%;
+  padding: var(--tts-table-column-title-padding, $column-title-padding);
+  font-size: var(--tts-table-column-title-padding, $column-title-font-size);
+  text-align: center;
+  font-weight: bold;
+}

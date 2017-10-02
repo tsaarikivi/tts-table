@@ -1,0 +1,63 @@
+{
+  "namespace": "ttstable",
+  "components": [
+    [
+      "TTS-SIDE-COLUMN",
+      "hgjq0aoi",
+      {
+        "$": "11usuhr0"
+      },
+      [
+        [
+          "rows",
+          1,
+          2
+        ]
+      ]
+    ],
+    [
+      "TTS-TABLE",
+      "hgjq0aoi",
+      {
+        "$": "11usuhr0"
+      },
+      [
+        [
+          "rows",
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          "itemSelected",
+          "handleItemSelected"
+        ]
+      ]
+    ],
+    [
+      "TTS-TABLE-COLUMN",
+      "hgjq0aoi",
+      {
+        "$": "11usuhr0"
+      },
+      0,
+      [
+        [
+          "itemSelected",
+          "handleItemSelected"
+        ]
+      ]
+    ],
+    [
+      "TTS-TABLE-ITEM",
+      "hgjq0aoi",
+      {
+        "$": "11usuhr0"
+      }
+    ]
+  ],
+  "loader": "ttstable.js",
+  "core": "ttstable/ttstable.ds1phpbn.js",
+  "corePolyfilled": "ttstable/ttstable.vuwvplxs.pf.js"
+}

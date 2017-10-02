@@ -1,0 +1,58 @@
+$item-color: rgba(16, 16, 16, 0.95);
+$item-font-size: 14px;
+
+$item-bg: #fafafa;
+$item-bg-hover: #ea80fc;
+$item-bg-unavailable: rgba(168, 168, 168, 0.7);
+$item-bg-selected: #40c4ff;
+$item-bg-free: #ffea00;
+
+$item-height: 34px;
+$item-padding: 7px;
+$item-margin: 4px 2px;
+$item-border-radius: 2px;
+
+.table-item {
+  box-sizing: border-box;
+  margin: var(--tts-table-item-margin, $item-margin);
+  font-size: var(--tts-table-item-font-size, $item-font-size);
+  padding: var(--tts-table-item-padding, $item-padding);
+  height: var(--tts-table-item-height, $item-height);
+  border-radius: var(--tts-table-item-border-radius, $item-border-radius);
+  background-color: var(--tts-table-item-background-color, $item-bg);
+  color: var(--tts-table-item-color, $item-color);
+}
+
+.table-item:hover {
+  cursor: pointer;
+  background-color: var(
+    --tts-table-item-hover-background-color,
+    $item-bg-hover
+  );
+}
+
+.unavailable {
+  background-color: var(
+    --tts-table-item-unavailable-background-color,
+    $item-bg-unavailable
+  );
+}
+
+.unavailable:hover {
+  cursor: default;
+  background-color: var(
+    --tts-table-item-unavailable-background-color,
+    $item-bg-unavailable
+  );
+}
+
+.selected {
+  background-color: var(
+    --tts-table-item-selected-background-color,
+    $item-bg-selected
+  );
+}
+
+.free {
+  background-color: var(--tts-table-item-free-background-color, $item-bg-free);
+}
