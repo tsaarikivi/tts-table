@@ -19,7 +19,9 @@ export class TtsTable {
     return [
       <tts-side-column rows={this.tableData[0].length} />,
       this.tableData.map(tableColumnData => (
-        <tts-table-column tableColumnData={tableColumnData} />
+        <tts-table-column tableColumnData={tableColumnData}>
+          <slot />
+        </tts-table-column>
       ))
     ];
   }

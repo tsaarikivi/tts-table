@@ -3,7 +3,7 @@
   "components": [
     [
       "TTS-SIDE-COLUMN",
-      "yvfnbhld",
+      "1mswovjf",
       {
         "$": "dgwyrxqb"
       },
@@ -17,7 +17,7 @@
     ],
     [
       "TTS-TABLE",
-      "yvfnbhld",
+      "1mswovjf",
       {
         "$": "dgwyrxqb"
       },
@@ -27,11 +27,12 @@
           "itemSelected",
           "handleItemSelected"
         ]
-      ]
+      ],
+      1
     ],
     [
       "TTS-TABLE-COLUMN",
-      "yvfnbhld",
+      "1mswovjf",
       {
         "$": "dgwyrxqb"
       },
@@ -41,17 +42,18 @@
           "itemSelected",
           "handleItemSelected"
         ]
-      ]
+      ],
+      1
     ],
     [
       "TTS-TABLE-ITEM",
-      "yvfnbhld",
+      "1mswovjf",
       {
         "$": "dgwyrxqb"
       },
       0,
       0,
-      2
+      1
     ]
   ],
   "loader": "ttstable.js",
