@@ -13,7 +13,7 @@ tts-table-column {
 .table-column-title {
   width: 100%;
   padding: var(--tts-table-column-title-padding, $column-title-padding);
-  font-size: var(--tts-table-column-title-padding, $column-title-font-size);
+  font-size: var(--tts-table-column-title-font-size, $column-title-font-size);
   text-align: center;
   font-weight: bold;
 }

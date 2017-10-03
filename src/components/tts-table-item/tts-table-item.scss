@@ -42,7 +42,7 @@ $item-border-radius: 2px;
 .unavailable:hover {
   cursor: default;
   background-color: var(
-    --tts-table-item-unavailable-background-color,
+    --tts-table-item-unavailable-hover-background-color,
     $item-bg-unavailable
   );
 }

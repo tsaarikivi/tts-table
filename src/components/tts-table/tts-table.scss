@@ -1,6 +1,8 @@
+$table-font-family: 'Courier New', monospace;
+
 tts-table {
   display: flex;
   overflow: auto;
   align-content: stretch;
-  font-family: 'Courier New', monospace;
+  font-family: var(--tts-table-font-family, $table-font-family);
 }
