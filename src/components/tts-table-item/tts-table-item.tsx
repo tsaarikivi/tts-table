@@ -34,7 +34,6 @@ export class TtsTableItem {
     return (
       <div class={this.getItemClass()} onClick={() => this.handleClick()}>
         {this.tableItemData.title}
-        <slot>{this.tableItemData.tooltipText}</slot>
       </div>
     );
   }
