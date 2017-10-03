@@ -50,6 +50,7 @@ interface TableItem {
   endTime: Date | number;
   row: number;
   title?: string;
+  tooltipText?: string;
   free?: boolean;
   unavailable?: boolean;
   selected?: boolean;
