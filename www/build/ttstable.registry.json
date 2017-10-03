@@ -3,9 +3,9 @@
   "components": [
     [
       "TTS-SIDE-COLUMN",
-      "fc1iiplb",
+      "yvfnbhld",
       {
-        "$": "0uf8b1pk"
+        "$": "dgwyrxqb"
       },
       [
         [
@@ -17,9 +17,9 @@
     ],
     [
       "TTS-TABLE",
-      "fc1iiplb",
+      "yvfnbhld",
       {
-        "$": "0uf8b1pk"
+        "$": "dgwyrxqb"
       },
       0,
       [
@@ -31,9 +31,9 @@
     ],
     [
       "TTS-TABLE-COLUMN",
-      "fc1iiplb",
+      "yvfnbhld",
       {
-        "$": "0uf8b1pk"
+        "$": "dgwyrxqb"
       },
       0,
       [
@@ -45,10 +45,13 @@
     ],
     [
       "TTS-TABLE-ITEM",
-      "fc1iiplb",
+      "yvfnbhld",
       {
-        "$": "0uf8b1pk"
-      }
+        "$": "dgwyrxqb"
+      },
+      0,
+      0,
+      2
     ]
   ],
   "loader": "ttstable.js",
