@@ -28,7 +28,9 @@ export class TtsTableColumn {
       <div>
         <div class="table-column-title">{columnTitle}</div>
         {this.tableColumnData.map(tableItemData => (
-          <tts-table-item tableItemData={tableItemData} />
+          <tts-table-item tableItemData={tableItemData}>
+            <slot name="tooltip" />
+          </tts-table-item>
         ))}
       </div>
     );
