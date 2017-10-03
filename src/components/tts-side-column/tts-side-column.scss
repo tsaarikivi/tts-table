@@ -1,3 +1,6 @@
+$column-padding-top: 30px;
+$column-font-weight: bold;
+
 $item-color: rgba(16, 16, 16, 0.95);
 $item-font-size: 16px;
 
@@ -11,8 +14,8 @@ $item-border-radius: 2px;
 tts-side-column {
   display: inline-block;
   vertical-align: top;
-  padding-top: 30px;
-  font-weight: bold;
+  padding-top: var(--tts-side-column-padding-top, $column-padding-top);
+  font-weight: var(--tts-side-column-font-weight, $column-font-weight);
 }
 
 .side-item {

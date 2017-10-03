@@ -1,6 +1,7 @@
 $column-width: 240px;
 $column-title-padding: 6px;
 $column-title-font-size: 16px;
+$column-title-font-weight: bold;
 
 tts-table-column {
   display: inline-block;
@@ -15,5 +16,8 @@ tts-table-column {
   padding: var(--tts-table-column-title-padding, $column-title-padding);
   font-size: var(--tts-table-column-title-font-size, $column-title-font-size);
   text-align: center;
-  font-weight: bold;
+  font-weight: var(
+    --tts-table-column-title-font-weight,
+    $column-title-font-weight
+  );
 }

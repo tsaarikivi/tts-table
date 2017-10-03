@@ -90,14 +90,23 @@ function setSelectedItem(tableData, selectedItem) {
 ```scss
 tts-table {
   --tts-table-font-family: 'Courier New', monospace;
+
+  --tts-table-column-title-font-size: 16px;
+  --tts-table-column-title-font-weight: bold;
   --tts-table-column-width: 240px;
   --tts-table-column-title-padding: 6px;
-  --tts-table-column-title-font-size: 16px;
-  --tts-table-item-margin: 4px 2px;
-  --tts-table-item-font-size: 14px;
-  --tts-table-item-padding: 10px;
-  --tts-table-item-height: 34px;
-  --tts-table-item-border-radius: 2px;
+
+  --tts-side-column-padding-top: 30px;
+  --tts-side-column-font-weight: bold;
+
+  --tts-side-item-color: rgba(16, 16, 16, 0.95);
+  --tts-side-item-background-color: transparent;
+  --tts-side-item-font-size: 16px;
+  --tts-side-item-height: 34px;
+  --tts-side-item-margin: 4px 2px;
+  --tts-side-item-padding: 9px 0;
+  --tts-side-item-border-radius: 2px;
+
   --tts-table-item-color: rgba(16, 16, 16, 0.95);
   --tts-table-item-background-color: #fafafa;
   --tts-table-item-hover-background-color: #ea80fc;
@@ -105,6 +114,11 @@ tts-table {
   --tts-table-item-unavailable-hover-background-color: rgba(168, 168, 168, 0.7);
   --tts-table-item-selected-background-color: #40c4ff;
   --tts-table-item-free-background-color: #ffea00;
+  --tts-table-item-font-size: 14px;
+  --tts-table-item-height: 34px;
+  --tts-table-item-margin: 4px 2px;
+  --tts-table-item-padding: 10px;
+  --tts-table-item-border-radius: 2px;
 }
 ```
 
