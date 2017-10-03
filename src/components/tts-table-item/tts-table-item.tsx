@@ -11,21 +11,21 @@ export class TtsTableItem {
   @Event() tableItemSelected: EventEmitter;
 
   getItemClass = (): string => {
-    const { tableItemData: { unavailable, free, selected } } = this;
+    const { tableItemData: { disabled, highlighted, selected } } = this;
     let itemClass = 'table-item';
-    if (unavailable) {
-      return (itemClass += ' unavailable');
+    if (disabled) {
+      return (itemClass += ' disabled');
     } else if (selected) {
       return (itemClass += ' selected');
-    } else if (free) {
-      return (itemClass += ' free');
+    } else if (highlighted) {
+      return (itemClass += ' highlighted');
     }
     return itemClass;
   };
 
   handleClick = (): void => {
     const { tableItemData } = this;
-    if (!tableItemData.unavailable) {
+    if (!tableItemData.disabled) {
       this.tableItemSelected.emit(tableItemData);
     }
   };

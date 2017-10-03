@@ -3,9 +3,9 @@ $item-font-size: 14px;
 
 $item-bg: #fafafa;
 $item-bg-hover: #ea80fc;
-$item-bg-unavailable: rgba(168, 168, 168, 0.7);
+$item-bg-disabled: rgba(168, 168, 168, 0.7);
 $item-bg-selected: #40c4ff;
-$item-bg-free: #ffea00;
+$item-bg-highlighted: #ffea00;
 
 $item-height: 34px;
 $item-padding: 10px;
@@ -32,18 +32,18 @@ $item-border-radius: 2px;
   );
 }
 
-.unavailable {
+.disabled {
   background-color: var(
-    --tts-table-item-unavailable-background-color,
-    $item-bg-unavailable
+    --tts-table-item-disabled-background-color,
+    $item-bg-disabled
   );
 }
 
-.unavailable:hover {
+.disabled:hover {
   cursor: default;
   background-color: var(
-    --tts-table-item-unavailable-hover-background-color,
-    $item-bg-unavailable
+    --tts-table-item-disabled-hover-background-color,
+    $item-bg-disabled
   );
 }
 
@@ -54,6 +54,9 @@ $item-border-radius: 2px;
   );
 }
 
-.free {
-  background-color: var(--tts-table-item-free-background-color, $item-bg-free);
+.highlighted {
+  background-color: var(
+    --tts-table-item-highlighted-background-color,
+    $item-bg-highlighted
+  );
 }

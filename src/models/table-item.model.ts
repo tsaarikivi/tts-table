@@ -4,8 +4,8 @@ export interface TableItem {
   row: number;
   title?: string;
   tooltipText?: string;
-  free?: boolean;
-  unavailable?: boolean;
+  highlighted?: boolean;
+  disabled?: boolean;
   selected?: boolean;
 }
 

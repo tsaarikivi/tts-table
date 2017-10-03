@@ -51,8 +51,8 @@ interface TableItem {
   row: number;
   title?: string;
   tooltipText?: string;
-  free?: boolean;
-  unavailable?: boolean;
+  highlighted?: boolean;
+  disabled?: boolean;
   selected?: boolean;
 }
 ```
@@ -64,7 +64,7 @@ interface TableItem {
 @Event() tableItemSelected: EventEmitter;
 ```
 
-Please note that you should handle the logic of selecting / adding free / unavailbling the items in the parent component. The logic is delegated because of multi / single selection possibilities. Maybe someone does not want selections at all.
+Please note that you should handle the logic of selecting / adding highlighted / unavailbling the items in the parent component. The logic is delegated because of multi / single selection possibilities. Maybe someone does not want selections at all.
 
 ```ts
 // Here is an example of single seleciton
@@ -111,10 +111,10 @@ tts-table {
   --tts-table-item-color: rgba(16, 16, 16, 0.95);
   --tts-table-item-background-color: #fafafa;
   --tts-table-item-hover-background-color: #ea80fc;
-  --tts-table-item-unavailable-background-color: rgba(168, 168, 168, 0.7);
-  --tts-table-item-unavailable-hover-background-color: rgba(168, 168, 168, 0.7);
+  --tts-table-item-disabled-background-color: rgba(168, 168, 168, 0.7);
+  --tts-table-item-disabled-hover-background-color: rgba(168, 168, 168, 0.7);
   --tts-table-item-selected-background-color: #40c4ff;
-  --tts-table-item-free-background-color: #ffea00;
+  --tts-table-item-highlighted-background-color: #ffea00;
   --tts-table-item-font-size: 14px;
   --tts-table-item-height: 34px;
   --tts-table-item-margin: 4px 2px;
