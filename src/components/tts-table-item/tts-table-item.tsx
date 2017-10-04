@@ -1,4 +1,11 @@
-import { Component, Prop, Event, EventEmitter } from '@stencil/core';
+import {
+  Component,
+  Prop,
+  Event,
+  EventEmitter,
+  Listen,
+  State
+} from '@stencil/core';
 import { TableItem } from '../../models/table-item.model';
 
 @Component({
@@ -6,9 +13,21 @@ import { TableItem } from '../../models/table-item.model';
   styleUrl: 'tts-table-item.scss'
 })
 export class TtsTableItem {
+  @State() showTooltip: boolean = false;
+
   @Prop() tableItemData: TableItem;
 
   @Event() tableItemSelected: EventEmitter;
+
+  @Listen('mouseenter')
+  handleMouseEnter() {
+    this.showTooltip = true;
+  }
+
+  @Listen('mouseleave')
+  handleMouseLeave() {
+    this.showTooltip = false;
+  }
 
   getItemClass = (): string => {
     const { tableItemData: { disabled, highlighted, selected } } = this;
@@ -31,10 +50,14 @@ export class TtsTableItem {
   };
 
   render() {
+    const { title, tooltipText } = this.tableItemData;
+    const { showTooltip } = this;
     return (
       <div class={this.getItemClass()} onClick={() => this.handleClick()}>
-        {this.tableItemData.title}
-        <slot name="tooltip">{this.tableItemData.title}</slot>
+        {title}
+        {showTooltip && tooltipText ? (
+          <tts-tooltip>{tooltipText}</tts-tooltip>
+        ) : null}
       </div>
     );
   }

@@ -3,9 +3,9 @@
   "components": [
     [
       "TTS-SIDE-COLUMN",
-      "bdgxv8ql",
+      "vublldxz",
       {
-        "$": "kfmgbikx"
+        "$": "gbt8y7a2"
       },
       [
         [
@@ -17,9 +17,9 @@
     ],
     [
       "TTS-TABLE",
-      "bdgxv8ql",
+      "vublldxz",
       {
-        "$": "kfmgbikx"
+        "$": "gbt8y7a2"
       },
       0,
       [
@@ -31,9 +31,9 @@
     ],
     [
       "TTS-TABLE-COLUMN",
-      "bdgxv8ql",
+      "vublldxz",
       {
-        "$": "kfmgbikx"
+        "$": "gbt8y7a2"
       },
       0,
       [
@@ -45,13 +45,35 @@
     ],
     [
       "TTS-TABLE-ITEM",
-      "bdgxv8ql",
+      "vublldxz",
       {
-        "$": "kfmgbikx"
+        "$": "gbt8y7a2"
+      },
+      0,
+      [
+        [
+          "mouseenter",
+          "handleMouseEnter",
+          0,
+          1
+        ],
+        [
+          "mouseleave",
+          "handleMouseLeave",
+          0,
+          1
+        ]
+      ]
+    ],
+    [
+      "TTS-TOOLTIP",
+      "vublldxz",
+      {
+        "$": "gbt8y7a2"
       },
       0,
       0,
-      2
+      1
     ]
   ],
   "loader": "ttstable.js",

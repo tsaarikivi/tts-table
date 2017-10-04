@@ -2,6 +2,67 @@
 # yarn lockfile v1
 
 
+"@polymer/font-roboto@^3.0.0-pre.1":
+  version "3.0.0-pre.1"
+  resolved "https://registry.yarnpkg.com/@polymer/font-roboto/-/font-roboto-3.0.0-pre.1.tgz#3b989a3b7c7d7351d4d816f8136d708512b0bd10"
+
+"@polymer/iron-flex-layout@^3.0.0-pre.1":
+  version "3.0.0-pre.1"
+  resolved "https://registry.yarnpkg.com/@polymer/iron-flex-layout/-/iron-flex-layout-3.0.0-pre.1.tgz#46738316b52fe2858bf4fb207176366b1657457f"
+  dependencies:
+    "@polymer/polymer" "^3.0.0-pre.1"
+
+"@polymer/iron-meta@preview":
+  version "1.1.2-pre.3"
+  resolved "https://registry.yarnpkg.com/@polymer/iron-meta/-/iron-meta-1.1.2-pre.3.tgz#7537ff3e458d35306ba8d87b63f7043b868ace35"
+  dependencies:
+    "@polymer/polymer" preview
+
+"@polymer/iron-resizable-behavior@preview":
+  version "1.0.5-pre.3"
+  resolved "https://registry.yarnpkg.com/@polymer/iron-resizable-behavior/-/iron-resizable-behavior-1.0.5-pre.3.tgz#800fc89b32bf19167fdb0d9a1e44ea1ae3d03848"
+  dependencies:
+    "@polymer/polymer" preview
+
+"@polymer/iron-selector@preview":
+  version "1.5.2-pre.3"
+  resolved "https://registry.yarnpkg.com/@polymer/iron-selector/-/iron-selector-1.5.2-pre.3.tgz#5f32a0cf7797fe2ddc8647d15204458b2a89ed5f"
+  dependencies:
+    "@polymer/polymer" preview
+
+"@polymer/neon-animation@^3.0.0-pre.1":
+  version "1.2.4-pre.3"
+  resolved "https://registry.yarnpkg.com/@polymer/neon-animation/-/neon-animation-1.2.4-pre.3.tgz#b4e0a92ff62b5ad8294f8b95cdbd5c1947eefd65"
+  dependencies:
+    "@polymer/iron-meta" preview
+    "@polymer/iron-resizable-behavior" preview
+    "@polymer/iron-selector" preview
+    "@polymer/polymer" preview
+    web-animations-js "^2.2.0"
+
+"@polymer/paper-styles@^3.0.0-pre.1":
+  version "3.0.0-pre.1"
+  resolved "https://registry.yarnpkg.com/@polymer/paper-styles/-/paper-styles-3.0.0-pre.1.tgz#333fd04f5052733ebc10e3a08a59f07b5586af13"
+  dependencies:
+    "@polymer/font-roboto" "^3.0.0-pre.1"
+    "@polymer/iron-flex-layout" "^3.0.0-pre.1"
+    "@polymer/polymer" "^3.0.0-pre.1"
+
+"@polymer/paper-tooltip@^3.0.0-pre.1":
+  version "3.0.0-pre.1"
+  resolved "https://registry.yarnpkg.com/@polymer/paper-tooltip/-/paper-tooltip-3.0.0-pre.1.tgz#3eac850fc60f559d85daca94b78ef342ced0ff3f"
+  dependencies:
+    "@polymer/neon-animation" "^3.0.0-pre.1"
+    "@polymer/paper-styles" "^3.0.0-pre.1"
+    "@polymer/polymer" "^3.0.0-pre.1"
+
+"@polymer/polymer@^3.0.0-pre.1", "@polymer/polymer@preview":
+  version "3.0.0-pre.1"
+  resolved "https://registry.yarnpkg.com/@polymer/polymer/-/polymer-3.0.0-pre.1.tgz#9fc26b5259aad9265f324ced02de715991d2eabe"
+  dependencies:
+    "@webcomponents/shadycss" "^1.0.0"
+    "@webcomponents/webcomponentsjs" "^1.0.0"
+
 "@stencil/core@0.0.6-0":
   version "0.0.6-0"
   resolved "https://registry.yarnpkg.com/@stencil/core/-/core-0.0.6-0.tgz#6fbcce5e346ef5cc9870dd5d9414ca178b41a372"
@@ -32,6 +93,14 @@
 "@types/node@^6.0.46":
   version "6.0.88"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-6.0.88.tgz#f618f11a944f6a18d92b5c472028728a3e3d4b66"
+
+"@webcomponents/shadycss@^1.0.0":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@webcomponents/shadycss/-/shadycss-1.0.6.tgz#5679919c43da77cbc884ba0bef6457111c65d7cd"
+
+"@webcomponents/webcomponentsjs@^1.0.0":
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/@webcomponents/webcomponentsjs/-/webcomponentsjs-1.0.14.tgz#7760823bfaa94306cee087603a0b1a1d22ee005f"
 
 abab@^1.0.3:
   version "1.0.4"
@@ -1883,6 +1952,10 @@ verror@1.10.0:
 vlq@^0.2.1:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/vlq/-/vlq-0.2.2.tgz#e316d5257b40b86bb43cb8d5fea5d7f54d6b0ca1"
+
+web-animations-js@^2.2.0:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/web-animations-js/-/web-animations-js-2.3.1.tgz#3a6d9bc15196377a90f8e2803fa5262165b04510"
 
 webidl-conversions@^4.0.1, webidl-conversions@^4.0.2:
   version "4.0.2"

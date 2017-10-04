@@ -7,7 +7,8 @@ exports.config = {
         'tts-table',
         'tts-table-column',
         'tts-table-item',
-        'tts-side-column'
+        'tts-side-column',
+        'tts-tooltip'
       ]
     }
   ]

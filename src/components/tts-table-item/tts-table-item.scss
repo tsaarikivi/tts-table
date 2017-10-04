@@ -13,8 +13,9 @@ $item-margin: 4px 2px;
 $item-border-radius: 2px;
 
 .table-item {
+  position: relative;
   box-sizing: border-box;
-  overflow: hidden;
+  display: block;
   margin: var(--tts-table-item-margin, $item-margin);
   font-size: var(--tts-table-item-font-size, $item-font-size);
   padding: var(--tts-table-item-padding, $item-padding);

@@ -16,6 +16,7 @@
     "start": "npm run dev"
   },
   "dependencies": {
+    "@polymer/paper-tooltip": "^3.0.0-pre.1",
     "@stencil/core": "0.0.6-0"
   },
   "devDependencies": {
