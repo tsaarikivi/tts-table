@@ -3,7 +3,7 @@
   "components": [
     [
       "TTS-SIDE-COLUMN",
-      "kkon0alr",
+      "bdgxv8ql",
       {
         "$": "kfmgbikx"
       },
@@ -17,7 +17,7 @@
     ],
     [
       "TTS-TABLE",
-      "kkon0alr",
+      "bdgxv8ql",
       {
         "$": "kfmgbikx"
       },
@@ -31,7 +31,7 @@
     ],
     [
       "TTS-TABLE-COLUMN",
-      "kkon0alr",
+      "bdgxv8ql",
       {
         "$": "kfmgbikx"
       },
@@ -45,10 +45,13 @@
     ],
     [
       "TTS-TABLE-ITEM",
-      "kkon0alr",
+      "bdgxv8ql",
       {
         "$": "kfmgbikx"
-      }
+      },
+      0,
+      0,
+      2
     ]
   ],
   "loader": "ttstable.js",
