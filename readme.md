@@ -120,6 +120,17 @@ tts-table {
   --tts-table-item-margin: 4px 2px;
   --tts-table-item-padding: 10px;
   --tts-table-item-border-radius: 2px;
+
+  --tts-tooltip-text-align: center;
+  --tts-tooltip-top: 100%;
+  --tts-tooltip-cursor: default;
+  --tts-tooltip-left: 5%;
+  --tts-tooltip-width: 90%;
+  --tts-tooltip-padding: 8px;
+  --tts-tooltip-z-index: 1;
+  --tts-tooltip-font-weight: bold;
+  --tts-tooltip-background-color: rgba(222, 222, 222, 0.8);
+  --tts-tooltip-border-radius: 0 0 4px 4px;
 }
 ```
 
