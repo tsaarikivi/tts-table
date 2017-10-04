@@ -1,6 +1,6 @@
 {
   "name": "tts-table",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "A performant grid / table webcomponent.",
   "main": "dist/collection/index.js",
   "types": "dist/collection/index.d.ts",
