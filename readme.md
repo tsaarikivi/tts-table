@@ -46,17 +46,24 @@ export interface TableItem {
   endTime: Date | number;
   row: number;
   title?: string;
-  tooltipData?: string[];
+  tooltipData?: Tooltip[];
   highlighted?: boolean;
   disabled?: boolean;
   selected?: boolean;
 }
 
-// A column consists of an array of table items
+// tooltip datamodel
+export interface Tooltip {
+  type: string;
+  value: string;
+}
+
+// A column consists of several items
 export type TableColumn = TableItem[];
 
-// A Table consists of an array of table columns
+// A table consists of several columns
 export type TableData = TableColumn[];
+
 ```
 
 ### Events
