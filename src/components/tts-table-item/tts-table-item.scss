@@ -61,3 +61,17 @@ $item-border-radius: 2px;
     $item-bg-highlighted
   );
 }
+
+paper-tooltip {
+  width: 200px;
+  text-align: center;
+}
+
+paper-tooltip p {
+  padding: 4px 0;
+  margin: 0;
+}
+
+paper-tooltip img {
+  width: 50px;
+}

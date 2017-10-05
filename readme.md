@@ -46,7 +46,7 @@ export interface TableItem {
   endTime: Date | number;
   row: number;
   title?: string;
-  tooltipText?: string;
+  tooltipData?: string[];
   highlighted?: boolean;
   disabled?: boolean;
   selected?: boolean;

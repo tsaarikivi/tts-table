@@ -1,35 +1,28 @@
-import {
-  Component,
-  Prop,
-  Event,
-  EventEmitter,
-  Listen,
-  State
-} from '@stencil/core';
-import { TableItem } from '../../models/table-item.model';
+import { Component, Prop, Event, EventEmitter } from '@stencil/core';
+import { TableItem, Tooltip } from '../../models/table-item.model';
 
 @Component({
   tag: 'tts-table-item',
   styleUrl: 'tts-table-item.scss'
 })
 export class TtsTableItem {
-  @State() showTooltip: boolean = false;
-
   @Prop() tableItemData: TableItem;
 
   @Event() tableItemSelected: EventEmitter;
 
-  @Listen('mouseenter')
-  handleMouseEnter() {
-    this.showTooltip = true;
+  render() {
+    const { title, tooltipData } = this.tableItemData;
+    return (
+      <div class={this._getItemClass()} onClick={() => this._handleClick()}>
+        {title}
+        {tooltipData ? (
+          <paper-tooltip>{this._renderTooltipData(tooltipData)}</paper-tooltip>
+        ) : null}
+      </div>
+    );
   }
 
-  @Listen('mouseleave')
-  handleMouseLeave() {
-    this.showTooltip = false;
-  }
-
-  getItemClass = (): string => {
+  _getItemClass = (): string => {
     const { tableItemData: { disabled, highlighted, selected } } = this;
     let itemClass = 'table-item';
     if (disabled) {
@@ -42,27 +35,23 @@ export class TtsTableItem {
     return itemClass;
   };
 
-  handleClick = (): void => {
+  _handleClick = (): void => {
     const { tableItemData } = this;
     if (!tableItemData.disabled) {
       this.tableItemSelected.emit(tableItemData);
     }
   };
 
-  render() {
-    const { title, tooltipText } = this.tableItemData;
-    // const { showTooltip } = this;
-    return (
-      <div class={this.getItemClass()} onClick={() => this.handleClick()}>
-        {title}
-        <paper-tooltip>{tooltipText}</paper-tooltip>
-      </div>
-    );
+  _renderTooltipData(tooltipData: Tooltip[]) {
+    return tooltipData.map(({ type, value }) => {
+      switch (type) {
+        case 'text':
+          return <p>{value}</p>;
+        case 'image':
+          return <img src={value} />;
+        default:
+          return null;
+      }
+    });
   }
 }
-
-/*
-{showTooltip && tooltipText ? (
-          <tts-tooltip>{tooltipText}</tts-tooltip>
-        ) : null}
-*/

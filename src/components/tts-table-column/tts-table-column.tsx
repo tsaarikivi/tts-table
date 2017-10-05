@@ -1,4 +1,4 @@
-import { Component, Prop, Event, EventEmitter, Listen } from '@stencil/core';
+import { Component, Prop } from '@stencil/core';
 import { TableColumn } from '../../models/table-item.model';
 import { getShortTimeString } from '../../helpers/time';
 
@@ -8,13 +8,6 @@ import { getShortTimeString } from '../../helpers/time';
 })
 export class TtsTableColumn {
   @Prop() tableColumnData: TableColumn;
-
-  @Event() columnItemSelected: EventEmitter;
-
-  @Listen('itemSelected')
-  handleItemSelected(event: CustomEvent) {
-    this.columnItemSelected.emit(event.detail);
-  }
 
   getColumnTitle = (): string => {
     const [{ startTime, endTime }] = this.tableColumnData;

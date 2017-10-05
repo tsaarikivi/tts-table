@@ -6,24 +6,7 @@ import { TableData } from '../../models/table-item.model';
   styleUrl: 'tts-table.scss'
 })
 export class TtsTable {
-  @Prop()
-  tableData: TableData = [
-    [
-      {
-        title: 'hey',
-        row: 1,
-        startTime: 1,
-        endTime: 2,
-        tooltipText: 'Petteri on homeessa!\nSitte Kenotaan!'
-      },
-      {
-        title: 'hou',
-        row: 2,
-        startTime: 1,
-        endTime: 2
-      }
-    ]
-  ];
+  @Prop() tableData: TableData;
 
   @Event() tableItemSelected: EventEmitter;
 

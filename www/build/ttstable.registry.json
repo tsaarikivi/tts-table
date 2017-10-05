@@ -3,9 +3,9 @@
   "components": [
     [
       "TTS-SIDE-COLUMN",
-      "mssddupi",
+      "ee4cyti9",
       {
-        "$": "gbt8y7a2"
+        "$": "o3drxbuj"
       },
       [
         [
@@ -17,9 +17,9 @@
     ],
     [
       "TTS-TABLE",
-      "mssddupi",
+      "ee4cyti9",
       {
-        "$": "gbt8y7a2"
+        "$": "o3drxbuj"
       },
       0,
       [
@@ -31,49 +31,17 @@
     ],
     [
       "TTS-TABLE-COLUMN",
-      "mssddupi",
+      "ee4cyti9",
       {
-        "$": "gbt8y7a2"
-      },
-      0,
-      [
-        [
-          "itemSelected",
-          "handleItemSelected"
-        ]
-      ]
+        "$": "o3drxbuj"
+      }
     ],
     [
       "TTS-TABLE-ITEM",
-      "mssddupi",
+      "ee4cyti9",
       {
-        "$": "gbt8y7a2"
-      },
-      0,
-      [
-        [
-          "mouseenter",
-          "handleMouseEnter",
-          0,
-          1
-        ],
-        [
-          "mouseleave",
-          "handleMouseLeave",
-          0,
-          1
-        ]
-      ]
-    ],
-    [
-      "TTS-TOOLTIP",
-      "mssddupi",
-      {
-        "$": "gbt8y7a2"
-      },
-      0,
-      0,
-      1
+        "$": "o3drxbuj"
+      }
     ]
   ],
   "loader": "ttstable.js",
