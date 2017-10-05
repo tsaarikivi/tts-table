@@ -8,7 +8,5 @@ export interface TableItem {
   disabled?: boolean;
   selected?: boolean;
 }
-
-export interface TableColumn extends Array<TableItem> {}
-
-export interface TableData extends Array<TableColumn> {}
+export type TableColumn = TableItem[];
+export type TableData = TableColumn[];

@@ -20,15 +20,19 @@ importScripts('workbox-sw.prod.v2.0.3.js');
 const fileManifest = [
   {
     "url": "build/ttstable.js",
-    "revision": "9bb7a27b41d851a9e61d161589629c56"
+    "revision": "245aa141c81e73a0a17221250c52d1d9"
   },
   {
     "url": "build/ttstable.registry.json",
-    "revision": "f92a2a467ee4b07dd5a5bc4b16ec8853"
+    "revision": "3ba195d6525cef6059500ff4a8968d8c"
   },
   {
     "url": "build/ttstable/gbt8y7a2.css",
     "revision": "1083fd3d1c928b2f5b8ac373791657b4"
+  },
+  {
+    "url": "build/ttstable/mssddupi.js",
+    "revision": "aa7730ddb23643c69fdfcd6737fdef2e"
   },
   {
     "url": "build/ttstable/ttstable.ds1phpbn.js",
@@ -37,10 +41,6 @@ const fileManifest = [
   {
     "url": "build/ttstable/ttstable.vuwvplxs.pf.js",
     "revision": "b27a0ce2fd6d65a07265cfdf2c4155d8"
-  },
-  {
-    "url": "build/ttstable/vublldxz.js",
-    "revision": "1afcc3e64bfcaeafea6b0c13c7bf773d"
   },
   {
     "url": "index.html",

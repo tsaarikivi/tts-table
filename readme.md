@@ -40,12 +40,8 @@ Polyfills might also be needed for webcomponents.
 // Things you can set as props to the component
 @Prop() tableData: TableData;
 
-// TableData is an array of arrays of TableItem
-interface TableData extends Array<TableColumn> {}
-interface TableColumn extends Array<TableItem> {}
-
-// This is the data model of one item
-interface TableItem {
+// One table items datamodel
+export interface TableItem {
   startTime: Date | number;
   endTime: Date | number;
   row: number;
@@ -55,6 +51,12 @@ interface TableItem {
   disabled?: boolean;
   selected?: boolean;
 }
+
+// A column consists of an array of table items
+export type TableColumn = TableItem[];
+
+// A Table consists of an array of table columns
+export type TableData = TableColumn[];
 ```
 
 ### Events

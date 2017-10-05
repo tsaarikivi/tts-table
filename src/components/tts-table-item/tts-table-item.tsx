@@ -51,14 +51,18 @@ export class TtsTableItem {
 
   render() {
     const { title, tooltipText } = this.tableItemData;
-    const { showTooltip } = this;
+    // const { showTooltip } = this;
     return (
       <div class={this.getItemClass()} onClick={() => this.handleClick()}>
         {title}
-        {showTooltip && tooltipText ? (
-          <tts-tooltip>{tooltipText}</tts-tooltip>
-        ) : null}
+        <paper-tooltip>{tooltipText}</paper-tooltip>
       </div>
     );
   }
 }
+
+/*
+{showTooltip && tooltipText ? (
+          <tts-tooltip>{tooltipText}</tts-tooltip>
+        ) : null}
+*/
