@@ -63,15 +63,16 @@ $item-border-radius: 2px;
 }
 
 paper-tooltip {
-  width: 200px;
-  text-align: center;
+  width: var(--tooltip-width, 200px);
+  text-align: var(--tooltip-align, center);
 }
 
 paper-tooltip p {
-  padding: 4px 0;
-  margin: 0;
+  font-size: var(--tooltip-text-font-size, 14px);
+  padding: var(--tooltip-text-padding, 6px 0);
+  margin: var(--tooltip-text-margin, 0);
 }
 
 paper-tooltip img {
-  width: 50px;
+  width: var(--tooltip-image-width, 50px);
 }
