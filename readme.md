@@ -4,7 +4,9 @@
 
 ## Using this component
 
-Put a script tag similar to this:
+You need *tts-table* component and *paper-tooltip* element. Please check https://webcomponents.org for paper-tooltip.
+
+Include the paper-tooltip element in your index.html. Then put a script tag similar to this for tts-table:
 
 ```html
 <script src='https://unpkg.com/tts-table/dist/ttstable.js'></script>
